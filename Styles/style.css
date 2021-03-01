@@ -21,16 +21,48 @@ body {
 
 }    /*display : flex; justify-content: space-between; align-item: center;*/
 
-    header img {
-        float:left;
-        padding: 2px;
-    }
-header ul li {
-
-    float: right;
-    margin: 0px;
-
+header ul  {
+        display: flex;
+        justify-content: right;
+        align-items: center; 
 }
+
+header span  {
+    
+   position: relative;
+   top: 55px;
+   padding: 1px;
+     }
+
+header span img {
+    height: 52px;
+    position: relative;
+    top: -15px;
+}
+
+header span h1 {
+    font-size: 30px;
+}
+header span h1 span{
+    
+    position: relative;
+    top: -15px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+
+header ul li {
+    
+    padding: 1px;
+}
+
+header ul li:nth-child(7){
+    
+    padding-left: 5px;
+}
+
+
 
 h1 {
 
@@ -45,6 +77,10 @@ h1 span {
     padding: 1px;
 }
 
+p {
+    opacity: 0.6;
+
+}
 
 div  {
     background-image: url(../Images/hr-img.png);
@@ -96,6 +132,8 @@ article {
     height: 200px;
     font-family: "Times New Roman", serif;
     margin-bottom: 20px;
+    box-shadow: 0px 7px lightgray;
+
 }
 
 article ul:first-child {
@@ -112,3 +150,78 @@ article ul:last-child {
 
 }
 
+section:last-child {
+    display: inline-block;
+}
+
+section:last-child img {
+    float: left;
+    padding:2px;
+}
+section:last-child h3{
+    padding:2px;
+    position: relative;
+    left: 10px;
+    font-weight: bold;
+
+}
+
+section:last-child p {
+    padding:2px;
+    position: relative;
+    left: 10px;
+}
+
+section:last-child button {
+    padding:2px;
+    background-color: rgb(218, 80, 38);
+    width:170px;
+    height: 50px;
+    position: relative;
+    bottom: 40px;
+    left: 80px;
+    
+}
+
+section:last-child section {
+
+    display : flex; justify-content: space-between; align-items: center;
+    padding: 5px;
+
+}
+
+input[type=checkbox]:checked + label{
+ 
+    text-decoration: line-through;
+}
+
+main {
+    
+    margin-bottom: 200px;
+}
+
+hr {
+    
+   opacity: 0.1; 
+}
+
+section span {
+    
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px; 
+
+}
+
+section span img {
+    height: 30px;
+   opacity: 0.7;
+    position: relative;
+    bottom: 55px;
+   
+}
+
+footer {
+    text-align: center;
+}
